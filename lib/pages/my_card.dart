@@ -31,17 +31,20 @@ class MyCardPage extends StatelessWidget {
                 height: 20,
               ),
               const FrontCard(),
+
               const SizedBox(
-                height: 25,
+                height: 30,
               ),
               const CreditCard(),
+
+
               TextButton.icon(
                 onPressed: () {},
                 icon: const Icon(Icons.add),
                 label: const Text(
                   "Add Card",
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 17,
                     fontWeight: FontWeight.w600,
                   ),
                 ),
