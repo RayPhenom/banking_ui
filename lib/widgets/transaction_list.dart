@@ -7,8 +7,8 @@ class TransactionList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView(
-        children: const [
-          Padding(
+        children:  [
+          const Padding(
             padding:
                 EdgeInsets.symmetric(horizontal: 25.0), // Add padding as needed
             child: Row(
@@ -23,7 +23,8 @@ class TransactionList extends StatelessWidget {
               ],
             ),
           ),
-          ListTile(
+          Divider(color: Colors.grey[200],),
+          const ListTile(
             leading: CircleAvatar(
               backgroundColor: Color.fromARGB(255, 238, 244, 245),
               child: Icon(
@@ -34,26 +35,28 @@ class TransactionList extends StatelessWidget {
             title: Text("Workout"),
             subtitle: Text("Payment"),
             trailing: Text(
-              "\KSH 2500",
+              "-KSH 2500",
               style: TextStyle(color: Colors.redAccent),
             ),
           ),
-          ListTile(
+          Divider(color: Colors.grey[200],),
+          const ListTile(
             leading: CircleAvatar(
               backgroundColor: Color.fromARGB(255, 238, 244, 245),
               child: Icon(
-                Icons.track_changes,
+                Icons.account_balance,
                 color: Colors.blueAccent,
               ),
             ),
             title: Text("K.C.B Bank"),
             subtitle: Text("Deposit"),
             trailing: Text(
-              "KSH 19500",
+              "+KSH 19500",
               style: TextStyle(color: Colors.purpleAccent),
             ),
           ),
-          ListTile(
+          Divider(color: Colors.grey[200],),
+          const ListTile(
             leading: CircleAvatar(
               backgroundColor: Color.fromARGB(255, 238, 244, 245),
               child: Icon(
@@ -64,11 +67,12 @@ class TransactionList extends StatelessWidget {
             title: Text("Shopping"),
             subtitle: Text("Payment"),
             trailing: Text(
-              "\KSH 12500",
+              "-KSH 12500",
               style: TextStyle(color: Colors.blueAccent),
             ),
           ),
-          ListTile(
+          Divider(color: Colors.grey[200],),
+          const ListTile(
             leading: CircleAvatar(
               backgroundColor: Color.fromARGB(255, 238, 244, 245),
               child: Icon(
@@ -79,11 +83,12 @@ class TransactionList extends StatelessWidget {
             title: Text("Movie"),
             subtitle: Text("Payment"),
             trailing: Text(
-              "\KSH 600",
+              "-KSH 600",
               style: TextStyle(color: Colors.teal),
             ),
           ),
-          ListTile(
+          Divider(color: Colors.grey[200],),
+          const ListTile(
             leading: CircleAvatar(
               backgroundColor: Color.fromARGB(255, 238, 244, 245),
               child: Icon(
@@ -94,7 +99,23 @@ class TransactionList extends StatelessWidget {
             title: Text("Fare"),
             subtitle: Text("Payment"),
             trailing: Text(
-              "\KSH 900",
+              "+KSH 900",
+              style: TextStyle(color: Colors.teal),
+            ),
+          ),
+          Divider(color: Colors.grey[200],),
+         const  ListTile(
+            leading: CircleAvatar(
+              backgroundColor: Color.fromARGB(255, 238, 244, 245),
+              child: Icon(
+                Icons.send,
+                color: Colors.teal,
+              ),
+            ),
+            title: Text("To Ray Lumumba"),
+            subtitle: Text("Send"),
+            trailing: Text(
+              "+KSH 900",
               style: TextStyle(color: Colors.teal),
             ),
           )
