@@ -37,6 +37,10 @@ class MyCardPage extends StatelessWidget {
               ),
               const CreditCard(),
 
+              // Add gap here
+              const SizedBox(
+                height: 20, // Adjust this value as needed
+              ),
 
               TextButton.icon(
                 onPressed: () {},
@@ -57,7 +61,7 @@ class MyCardPage extends StatelessWidget {
                   backgroundColor: Colors.grey,
                   foregroundColor: Colors.black,
                 ),
-              )
+              ),
             ],
           ),
         ),
@@ -65,6 +69,7 @@ class MyCardPage extends StatelessWidget {
     );
   }
 }
+
 
 class FrontCard extends StatelessWidget {
   const FrontCard({super.key});
