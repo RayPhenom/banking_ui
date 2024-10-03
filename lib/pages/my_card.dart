@@ -37,9 +37,8 @@ class MyCardPage extends StatelessWidget {
               ),
               const CreditCard(),
 
-              // Add gap here
               const SizedBox(
-                height: 20, // Adjust this value as needed
+                height: 20,
               ),
 
               TextButton.icon(
